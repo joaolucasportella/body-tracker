@@ -68,10 +68,6 @@ while cap.isOpened():
     cv2.putText(image, fps_str, (20, 50),
                 cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 3)
 
-    # Credits
-    cv2.putText(image, "Made by Joao Lucas de Sousa Portella",
-                (20, 80), cv2.FONT_HERSHEY_PLAIN, 1, (255, 0, 0), 1)
-
     # Display
     cv2.imshow('Body Tracker 1.0', image)
     if cv2.waitKey(5) & 0xFF == 27:
